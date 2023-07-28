@@ -8,52 +8,58 @@
     <title>Odin Form</title>
 </head>
 <body>
-    
-    <div class="main-pic">
-        <img src="./pics/big.jpg"
-             srcset="./pics/big.jpg 2400w,
-                     ./pics/mid.jpg 1920w,
-                     ./pics/small.jpg 640w"
-                     alt="a pink painting">
-        <div class="logo-cont">
-            <span class="logo">
-               <span class="logo-c">C</span>
-               <p>paint</p>
-            </span>
+    <div class="all-cont">
+        <div class="main-pic">
+            <img src="./pics/big.jpg"
+                    srcset="./pics/big.jpg 2400w,
+                            ./pics/mid.jpg 1920w,
+                            ./pics/small.jpg 640w"
+                            alt="a pink painting">
         </div>
-        <span class="contribution-txt">
+        <div class="logo-cont">
+            <span class="logo-c" id="logo-item">C</span>
+            <span id="logo-item">paint</span>
+        </div>
+        <div class="contribution-txt">
             Photo by <a href="https://unsplash.com/@pawel_czerwinski?
             utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
             Pawel Czerwinski
             </a> on <a href="https://unsplash.com/wallpapers/design/pattern?utm_source
             =unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-        </span>
-        
-    </div>
-    
-    <div class="txt-form-cont">
-        <div class="main-txt">
-            <p>
-                Cpaint services will give your house a fresh look.
-                leave us your information and we will contact you as soon as possible.
-            </p>
         </div>
-        <form action="https//:httpbin.org/" method="post">
-            
-            <label for="f-name">first name:</label>
-            <input type="text" id="f-name" name="f-name">
-            <label for="email">email:</label>
-            <input type="text" id="email" name="email">
-            <label for="pass">password:</label>
-            <input type="text" id="pass" name="password">
-            <label for="l-name">last name:</label>
-            <input type="text" id="l-name" name="last-name">
-            <label for="phone">phone number:</label>
-            <input type="text" id="phone"  name="phone-number">
-            <label for="confirsm-pass">conform password:</label>
-            <input type="text" id="condirm-pass" name="password-confirm">
+        <div class="main-txt">
+            Cpaint services are just what you need!
+            leave your information below and we will contact you ASAP!
+            <p>you know what to do.</p>
+        </div>
+        <form action="https://httpbin.org/">
+            <p>let's do this!</p>
+            <div class="form-section-one">
+                <label for="name">first name</label>
+                <input type="text" name="userName" id="name">
+                <label for="mail">email</label>
+                <input type="email" id="mail" name="userEmail">
+                <label for="pass">password</label>
+                <input type="password" id="pass" name="userPassword">
+            </div>
+            <div class="form-section-two">
+                <label for="last-name">last name</label>
+                <input type="text" id="last-name" name="userlastName">
+                <label for="number">phone number</label>
+                <input type="tel" id="number" name="userNumber">
+                <label for="password-conf">confirm password</label>
+                <input type="password" id="password-conf" name="userPasswordConf">
+            </div>
+            <div id="btn-log">
+                <button type="submit" class="submit-btn">create account</button>
+                <div class="log-in">
+                    <span>already have an account?  </span><span><a href="https://www.google.com">  log in</a></span>
+                </div>
+            </div>
         </form>
-    </div>
-</body>
+        
+        
+    </div>        
+          
+</body>    
 </html>
